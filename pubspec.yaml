@@ -1,0 +1,48 @@
+name: flutter_complete_demo
+description: Demo Flutter app with splash, login, and role-based home pages.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icônes et widgets iOS
+  cupertino_icons: ^1.0.2
+
+  # Pour communiquer avec ton backend Django
+  http: ^0.13.5
+
+  # Pour stocker localement le token utilisateur
+  shared_preferences: ^2.0.6
+
+  # Pour choisir des images (profil, etc.)
+  image_picker: ^1.1.2
+
+  # Pour formater les dates (dans les pages congé, autorisation…)
+  intl: ^0.20.2
+
+  # Pour stockage sécurisé (mot de passe / token chiffré)
+  flutter_secure_storage: ^9.2.4
+
+  # 🔔 Pour les notifications locales
+  flutter_local_notifications: ^18.0.1
+
+  # 🕓 Pour gérer les fuseaux horaires (rappels planifiés)
+  timezone: ^0.9.2
+  fl_chart: ^1.1.1
+  local_auth: 2.2.0
+  qr_code_scanner: ^1.0.1
+  flutter_email_sender: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
